@@ -2,7 +2,7 @@
 let loc = null;          
 			
 //Alert shown when webpage is opened
-//alert("Welcome to Man_stories!\n\n\This game aims to help you explore the city by searching for hidden multimedia stories in the real-world urban environment. To continue please enable location on your device.\n\nFurther instructions are in the menu.\n\n Have fun!");      
+alert("Welcome to Man_stories!\n\n\This game aims to help you explore the city by searching for hidden multimedia stories in the real-world urban environment. To continue please enable location on your device.\n\nFurther instructions are in the menu.\n\n Have fun!");      
 
 
 // Style for geofences
@@ -44,18 +44,7 @@ const Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/te
     ext: 'png'
 });
 Stamen_Terrain.addTo(map)
-// const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
-// tiles.addTo(map); 
 
-/*
-// zoom control options
-var zoomOptions = {
-    zoomInText: '+',
-    zoomOutText: '-',
-};
-var zoom = L.control.zoom(zoomOptions);   // Creating zoom control
-zoom.addTo(map);   // Adding zoom control to the map
-*/
 
 // Leaflet function that tracks player's geolocation
 map.locate({setView: true, maxZoom: 14, watch: true, enableHighAccuracy: true});   
@@ -331,35 +320,7 @@ button.on("click", () => {
 banner.toggleClass("alt")
 })
 
-//========================================================================================================
-// Canvas
-/*
-var ciLayer = L.canvasIconLayer({}).addTo(map);
 
-//ciLayer.addOnClickListener(function (e,data) {console.log(data)});
-//ciLayer.addOnHoverListener(function (e,data) {console.log(data[0].data._leaflet_id)});
-
-ciLayer.addOnClickListener(function (e,data) {console.log(data[0].data.mydata)
-});
-
-// Add an icon 
-var icon = L.icon({
-iconUrl: 'black_square.png',
-iconSize: [200, 180],  // icons are large
-iconAnchor: [10, 9]
-});
-
-var markers = [];
-    for (var i = 0; i < 100000; i++) {
-    var marker = L.marker([53.3308 + Math.random()*0.3, -2.5026 + Math.random()*0.5], {icon: icon}).bindPopup();  //.bindPopup("I Am "+i)     [52.3008 + Math.random()*1.8, -4.2426 + Math.random()*3.6]
-    markers.push(marker);
-    }
-    
-ciLayer.addLayers(markers);
-*/
-
-
-//-------------------------------------------------------------------------
 
 
 
@@ -381,21 +342,3 @@ map.setMaxBounds(map.getBounds());
 
 // zoom the map to the polyline
 map.fitBounds(getBounds(), { reset: true });
-
-// example  // https://stackoverflow.com/questions/40433317/leaflet-map-update-marker-using-navigator-geolocation-watchposition
-
-// This video might help with commenting the locate() code.
-// https://egghead.io/lessons/react-use-leaflet-s-geolocation-api-to-find-a-browser-s-location-to-update-a-react-leaflet-map
-
-// Some more locate() examples worth checking
-// https://javascript.hotexamples.com/examples/lib.leaflet/Map/locate/javascript-map-locate-method-examples.html
-// https://gis.stackexchange.com/questions/417505/geofences-in-leaflet-with-live-location
-
-// Simple leaflet examples
-// https://harrywood.co.uk/maps/examples/
-
-// This one is a very cool map examples that finds the nearest points to your location
-// https://bl.ocks.org/rgdonohue/0598de175f591803fa97d65d8330f40d
-
-// React
-// https://morioh.com/p/b14577f85ed2
