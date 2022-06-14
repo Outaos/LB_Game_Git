@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>A location-based game to rediscover your city</title>              
+	
+		<!-- Leafet CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"/> 
+        <!--Leaflet js -->    
+		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>   
+		
+        <!-- Turf js -->
+		<script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>    
+
+		<!-- jquery-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+        <!-- Delete @[VERSION] to allow the download of the latest version-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+		
+        <!-- Set size to fit mobile browser -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />   
+        
+        <!-- Add CSS style -->
+        <link rel="stylesheet" href="/Manc1_css.css">
+
+		<style>
+			
+		</style>
+	</head>
+
+
+    <!-- Set background colour --> 
+    <body style="background-color: #061529">   <!--#467984-->
+
+        <h1 style= 'font-size: 40px; font-family: Times New Roman; color:white; text-align:left; margin-bottom: -10px; margin-left:10px; text-shadow: 2px 2px whitesmoke'> Man_stories. A location-based game to rediscover Manchester </h1>                          
+        
+        <!-- Initialise the map-->
+		<div id='map'></div>
+
+		<!-- Set the location of this div, because right now it is in bottom left corner-->
+		<div id="banner-message">
+			<p>Welcome to the story game!</p>
+			<button>Start the game</button>
+		  </div>
+        
+        <!-- canvas -->
+        <script src="https://unpkg.com/leaflet-canvas-marker@0.2.0"></script>
+
+        <!-- Add the MAIN CODE from JavaScript -->
+        <script src="/Manc1_js.js">
+			
+        </script>
+    </body>
+</html>
