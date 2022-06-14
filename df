@@ -1,0 +1,23 @@
+[33mcommit 54718141ed1e5956378ea622b0077b5bd3c72d97[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Outaos <outao_eu@yahoo.com>
+Date:   Tue Jun 14 08:56:42 2022 +0100
+
+    Deleted the welcome button
+
+[33mcommit 744345fc10fc57e795d8b4b6489d4826521f8d1b[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Outaos <outao_eu@yahoo.com>
+Date:   Tue Jun 14 08:21:36 2022 +0100
+
+    Cleaned up the JS code, added Alert
+
+[33mcommit 280d78e612d26adae6e2642341bda90d42fa9c78[m
+Author: Outaos <outao_eu@yahoo.com>
+Date:   Tue Jun 14 08:17:41 2022 +0100
+
+    Adding a JS sourceCode and the CSS file
+
+[33mcommit 6caf1cc62cbca59a53ce4e4a9a0f4cb369c10206[m
+Author: Outaos <outao_eu@yahoo.com>
+Date:   Tue Jun 14 08:13:32 2022 +0100
+
+    Create the main HTML file
