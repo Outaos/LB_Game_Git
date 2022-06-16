@@ -116,6 +116,8 @@
                         // create marker object, pass custom icon as option, pass content and options to popup, add to map
                         L.marker(e.latlng, {icon: funny}).addTo(map); 
                         L.geoJSON(midbufferList[i], {style: enterstyleMid}).addTo(map);
+                } else {
+                    loc.bindPopup("<strong>You are here.</strong><br />Keep exploring!.", {maxWidth: 500});
                 }
             }
             
@@ -130,8 +132,9 @@
                             // create marker object, pass custom icon as option, pass content and options to popup, add to map
                             L.marker(e.latlng, {icon: audioIcon}).bindPopup(customPopup, customOptions).addTo(map);       
                             L.geoJSON(innerbufferList[i], {style:enterstyleIn}).addTo(map); 			
-                    
-                }  
+                }  else {
+                    loc.bindPopup("<strong>You are here.</strong><br />Keep exploring!.", {maxWidth: 500});
+                }
             } 
         }
 
