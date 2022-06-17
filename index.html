@@ -267,7 +267,7 @@
         const backTurner = new manIcon({iconUrl: 'BackTurner_1.jpg'}),
             oak = new manIcon({iconUrl:'Oak_2.jpg'}),
             whitworth = new manIcon({iconUrl: 'Whitworth_4.jpg'}),
-            faraday = new manIcon({iconUrl: 'Faraday_5.jpg'});
+            dot = new manIcon({iconUrl: 'pics/dot.png'});
 
 
         // Add audio popup content
@@ -337,7 +337,7 @@
         L.geoJSON(bt_geof_mid, {style: midStyle}).addTo(map); 										
         L.geoJSON(bt_geof_out,{style: outerStyle}).addTo(map);	
 
-        const bt = L.marker([53.484120,-2.237358], {icon:backTurner}).bindPopup("Back Turner Invader"); // .addTo(map)   
+        const bt = L.marker([53.484120,-2.237358], {icon:dot}).bindPopup("Back Turner Invader"); // .addTo(map)   
 
         // Inner geofence
         const bt_popupContent1 = ("<h1 style ='text-align:center; color: #263985'> Well done! You found Back Turner Invader!</h1><b> Please click on your music icon to listen to a story </b>")   //Add content using HTML tags 
@@ -365,7 +365,7 @@
         const os_geof_in = turf.buffer(os_dot, 0.02, {units:'kilometers',steps:24});
         const os_geof_mid = turf.buffer(os_dot, 0.2, {units:'kilometers', steps:24});   
         const os_geof_out = turf.buffer(os_dot, 0.4,{units: 'kilometers',steps:24});    
-        var os = L.marker([53.470192,-2.234620], {icon:oak}).bindPopup("Oak Street Invader").addTo(map);   
+        var os = L.marker([53.470192,-2.234620], {icon:dot}).bindPopup("Oak Street Invader").addTo(map);   
         L.geoJSON(os_geof_in,{style: innerStyle}).addTo(map);
         L.geoJSON(os_geof_mid, {style: midStyle}).addTo(map); 										
         L.geoJSON(os_geof_out,{style: outerStyle}).addTo(map);				 
@@ -396,7 +396,7 @@
         const ws_geof_in = turf.buffer(ws_dot, 0.02, {units:'kilometers',steps:24});
         const ws_geof_mid = turf.buffer(ws_dot, 0.2, {units:'kilometers', steps:24});  
         const ws_geof_out = turf.buffer(ws_dot, 0.4,{units: 'kilometers',steps:24});    
-        const ws = L.marker([53.493350,-2.226204], {icon:whitworth}).bindPopup("Whitworth Street Invader").addTo(map);   
+        const ws = L.marker([53.493350,-2.226204], {icon:dot}).bindPopup().addTo(map);   
         L.geoJSON(ws_geof_in,{style: innerStyle}).addTo(map);
         L.geoJSON(ws_geof_mid, {style: midStyle}).addTo(map);  										
         L.geoJSON(ws_geof_out,{style: outerStyle}).addTo(map);				 
@@ -414,7 +414,7 @@
             maxHeight: 400
         });
         // Outer geofence
-        const ws_popupContent3 = ("<h1 style ='text-align:center; color: #263985'> You are inside Whitworth Street outer geofence!</h1><br><iframe src='Whitworth_4.jpg' width='300' height='300' frameborder='0' ></iframe>");
+        const ws_popupContent3 = ("<h1 style ='text-align:center; color: #263985'> You are inside Whitworth Street outer geofence!</h1><br><iframe src='pics/Whitworth_4.jpg' width='300' height='300' frameborder='0' ></iframe>");
         // const ws_popupContent3 = ("<h1 style ='text-align:center; color: #263985'> You are inside Whitworth Street outer geofence!</h1><b> Please walk towards Shudehill bus terminal and you will discover another hint!</b>")   //Add content using HTML tags 
         const ws_popup3 = ws.bindPopup(ws_popupContent3, { 
             maxWidth: 250,				 
@@ -428,7 +428,7 @@
         const fs_geof_in = turf.buffer(fs_dot, 0.02, {units:'kilometers',steps:24});
         const fs_geof_mid = turf.buffer(fs_dot, 0.2, {units:'kilometers', steps:24});   
         const fs_geof_out = turf.buffer(fs_dot, 0.4,{units: 'kilometers',steps:24});    
-        const fs = L.marker([53.487077,-2.228177], {icon:faraday}).bindPopup("Faraday Street Invader").addTo(map);   
+        const fs = L.marker([53.487077,-2.228177], {icon:dot}).bindPopup().addTo(map);   
         L.geoJSON(fs_geof_in,{style: innerStyle}).addTo(map);
         L.geoJSON(fs_geof_mid, {style: midStyle}).addTo(map);  										
         L.geoJSON(fs_geof_out,{style: outerStyle}).addTo(map);				 
@@ -446,7 +446,7 @@
             maxHeight: 400
         });
         // Outer geofence
-        const fs_popupContent3 = ("<h1 style ='text-align:center; color: #263985'> You are inside Faraday Street outer geofence!</h1><br><iframe src='Faraday_5.jpg' width='300' height='300' frameborder='0' ></iframe>");
+        const fs_popupContent3 = ("<h1 style ='text-align:center; color: #263985'> You are inside Faraday Street outer geofence!</h1><br><iframe src='pics/Faraday_5.jpg' width='300' height='300' frameborder='0' ></iframe>");
         // const fs_popupContent3 = ("<h1 style ='text-align:center; color: #263985'> You are inside Faraday Street outer geofence!</h1><b> Please walk towards Shudehill bus terminal and you will discover another hint!</b> <figure><img </figure>")   //Add content using HTML tags 
         const fs_popup3 = fs.bindPopup(fs_popupContent3, { 
             maxWidth: 320,				 
